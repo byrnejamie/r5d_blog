@@ -16,20 +16,22 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/r5dblog.css' %}">
 
         {% block extra_css %}
-            {# Override this in templates to add extra stylesheets #}
+            {% include 'head_css.html' %}{# Override this in templates to add extra stylesheets #}
         {% endblock %}
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
-
+<nav class="navbar">
+    {% include 'main_navbar.html' %}
+</nav>
         {% block content %}{% endblock %}
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/r5dblog.js' %}"></script>
 
         {% block extra_js %}
-            {# Override this in templates to add extra javascript #}
+            {% include 'javascript.html' %}{# Override this in templates to add extra javascript #}
         {% endblock %}
     </body>
 </html>

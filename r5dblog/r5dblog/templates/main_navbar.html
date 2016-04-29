@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<nav class="navbar">
+        <div class="container text-center"><a href="index-slider.html"><img src="{% static 'img/logo_50_per.png' %}"  alt="Logo" class="logo"/></a><a data-toggle="collapse" data-target="#side-menu" class="toggle-menu menu-right pull-right push-body nav-icon"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+          <div class="collapse navbar-collapse center-block">
+            <ul class="navbar-nav navigation-symbol">
+              <li> <a href="index-slider.html">DEMO 1</a></li>
+              <li> <a href="index-video.html">DEMO 2</a></li>
+              <li> <a href="index-hamburger-menu.html">DEMO 3</a></li>
+              <li> <a href="index-border.html">DEMO 4</a></li>
+              <li> <a href="blog.html">BLOG</a></li>
+              <li class="dropdown"> <a data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">MORE <i class="caret"></i></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li> <a href="blog.html" class="dropdown-link">BLOG</a></li>
+                  <li> <a href="blog-post-single.html" class="dropdown-link">POST SINGLE</a></li>
+                  <li> <a href="blog-post-single-sidebar.html" class="dropdown-link">POST SIDEBAR </a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div id="side-menu" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right text-left"><img src="assets/images/logo/logo-light.png" alt="Logo"/><a href="#" class="close-menu"><i class="icon ion-ios-close-empty icon-close menu-close-btn"></i></a>
+            <ul class="nav">
+              <li> <a href="index-slider.html">DEMO 1</a></li>
+              <li> <a href="index-video.html">DEMO 2</a></li>
+              <li> <a href="index-hamburger-menu.html">DEMO 3</a></li>
+              <li> <a href="index-border.html">DEMO 4</a></li>
+              <li> <a href="blog.html">BLOG</a></li>
+              <li class="dropdown"><a href="#" class="expander">MORE <i class="caret"></i></a>
+                <div class="content">
+                  <ul>
+                    <li> <a href="blog.html">BLOG</a></li>
+                    <li> <a href="blog-post-single.html">POST</a></li>
+                    <li> <a href="blog-post-single-sidebar.html">POST SIDEBAR </a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <p class="copyright">COPYRIGHT © 2015  M & M</p>
+          </div>
+        </div>
+      </nav>
+ <link href="{% static 'css/theme.css' %}"
