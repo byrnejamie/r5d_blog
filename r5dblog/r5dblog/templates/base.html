@@ -22,9 +22,11 @@
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
+<div class="body-border">
 <nav class="navbar">
     {% include 'main_navbar.html' %}
 </nav>
+<div class="go-top"><i class="ion-android-arrow-dropup-circle"></i></div>
         {% block content %}{% endblock %}
 
         {# Global javascript #}
@@ -33,5 +35,6 @@
         {% block extra_js %}
             {% include 'javascript.html' %}{# Override this in templates to add extra javascript #}
         {% endblock %}
+</div>
     </body>
 </html>

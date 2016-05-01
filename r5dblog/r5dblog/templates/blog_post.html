@@ -1,7 +1,10 @@
 {% load wagtailcore_tags static %}
 
+<div class="container-fluid">
+<div class="text-center modal-intro background-blog-single modal-text-light section-overlay-dark">
+<div class="container padding-top padding-bottom"><img src="assets/images/team-member-3-avatar.jpg" alt="Author" class="img-circle"/><span></span>
 <a class="blog-post-link" href="{% pageurl blog %}">
-    <h2>{{ blog.title }}</h2>
+    <h2>{{ blog.title }}CHICKEN</h2>
 </a>
 
 {% if blog.date %}
@@ -10,7 +13,8 @@
         {{ blog.author }}
     </div>
 {% endif %}
-
+</div>
+</div>
 {% if include_context == "index_page" %}
 <div class="blog-intro">
     {{ blog.body|richtext|truncatewords_html:70 }}
@@ -56,4 +60,5 @@
         {% endif %}
         </div>
     </div>
+</div>
 </div>
